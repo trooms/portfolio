@@ -63,15 +63,15 @@ module.exports = {
         description: 'Viterbi School Computing Science, School of Cinematic Arts, Dornsife College of Letters Arts & Sciences',
       },
       {
-        date: 'Sep. 2019 - Mar. 2020',
+        date: 'Ansan-si, Gyeonggi-do, South Korea | Sep. 2019 - Mar. 2020',
         name: 'Rotary International High School Exchange Student',
         description:
-          '양명고등학교',
+          '양명고등학교 | 경기도 안양시',
       },
       {
-        date: 'Grad. Jun. 2019',
+        date: 'Healdsburg, CA | Grad. Jun. 2019',
         name: 'Healdsburg High School',
-        description: 'Also attended (for a short time) Central Catholic High School in Portland, OR and Mark Morris High School in Longview, WA.'
+        description: 'Also attended (for a week) Central Catholic in Portland, OR and  (freshman year) Mark Morris High School in Longview, WA.'
       },
     ],
   },
