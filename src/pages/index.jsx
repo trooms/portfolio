@@ -58,6 +58,7 @@ export const pageQuery = graphql`
           date
           name
           description
+          tools
         }
         education {
           date
