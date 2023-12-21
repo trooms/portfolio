@@ -12,9 +12,9 @@ import SectionExperience from '../components/section-experience';
 import Seo from '../components/seo';
 
 const Index = ({ data }) => {
-  const about = get(data, 'site.siteMetadata.extendedAbout', false);
+  const about = get(data, 'site.siteMetadata.about', false);
   const education = get(data, 'site.siteMetadata.education', false);
-  const projects = get(data, 'site.siteMetadata.skills', false);
+  const projects = get(data, 'site.siteMetadata.projects', false);
   const experience = get(data, 'site.siteMetadata.experience', false);
 
   return (
