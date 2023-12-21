@@ -133,7 +133,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
 
     type Frontmatter {
-      index: Number
+      index: ID!
       type: String
       title: String
       description: String
