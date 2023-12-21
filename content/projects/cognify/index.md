@@ -1,7 +1,7 @@
 ---
 type: project
 title: AI  Powered Education App
-date: 'Feb 2023 - Present',
+date: 'Feb 2023 - Present'
 description: 'Education app using a stochastic shortest path algorithm for optimizing spaced repetition scheduling'
 tools: 'Expo (React Native) + Tauri'
 ---
