@@ -1,7 +1,7 @@
 ---
+type: project
 title: My First Blog Post
 description: 'Ducimus perferendis porro cumque ea error ab voluptatem'
-link: trooms.dev
 ---
 
 ## Lorem ipsum dolor sit amet consectetur adipisicing elit

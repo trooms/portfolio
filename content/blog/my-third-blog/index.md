@@ -1,4 +1,5 @@
 ---
+type: blog
 title: My Third Blog Post
 date: '2020-10-10T12:00:00.00Z'
 description: 'Dolor inventore quasi necessitatibus odio eaque doloribus'
