@@ -1,5 +1,5 @@
 ---
 type: project
-title: LeetScope
+title: Cognify
 description: 'Education app using a stochastic shortest path algorithm for optimizing spaced repetition scheduling'
 ---

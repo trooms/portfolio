@@ -25,7 +25,7 @@ module.exports = {
       {
         date: 'Oct. 2023 - Dec. 2023',
         name: 'LeetScope',
-        description: 'Online code judge application based on Java code input and expected console print statements',
+        description: 'Online code judge application based on Java/C++ code input and expected console print statements',
         tools: 'Vue.js | Java Springboot'
       },
       {

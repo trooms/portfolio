@@ -18,7 +18,7 @@ The idea came about a couple months before the huge [r/WallstreetBets](https://e
 
 Despite being a freshman at the time, I met a PhD candidate in Neuroscience at Stanford, a former SpaceX Telemetry Software Engineer, and a Biomedical Engineering new grad from Boston University while playing basketball; all of whom got on board the project.
 
-We didn't end up making any money and the project was eventually abaonded, but for a short time during covid we all got together and coded nonstop like we were in *The Social Network*.
+We didn't end up making any money and the project was eventually abandoned, but for a short time during covid we all got together and coded nonstop like we were in *The Social Network*.
 
 ## Code
 
