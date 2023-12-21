@@ -54,6 +54,7 @@ public class CorsConfig implements WebMvcConfigurer {
 
 ### Database
 The database had a fairly straightforward design and flow. MySQL would be called via the JDBC API which would flow to MyBatisPlus into Springboot and eventually the frontend.
+
 <img src="./database.png" width="240px"/>
 
 ### Login Security

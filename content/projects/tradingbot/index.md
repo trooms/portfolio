@@ -16,7 +16,7 @@ The idea came about a couple months before the huge [r/WallstreetBets](https://e
 
 Despite being a freshman at the time, I met a PhD candidate in Neuroscience at Stanford, a former SpaceX Telemetry Software Engineer, and a Biomedical Engineering new grad from Boston University while playing basketball; all of whom got on board the project.
 
-We didn't end up making any money and the project was eventually abandoned, but for a short time during covid we all got together and coded nonstop like we were in *The Social Network*.
+We didn't end up making any money and the project was eventually abandoned, but for a short time during covid we all got together and coded nonstop like we were in *The Social Network* (tldr; it was fun).
 
 ## Code
 
@@ -24,8 +24,8 @@ As for the actual implementation, the core was to esentially feed in as much dat
 
 I worked primarily on the sentiment analysis (preprecossed for the rnn) and the neural network design.
 
-### Here are some of the inputs we retrieved:
-```
+### Here are some of the inputs we used:
+```python
 async def get_post_stats(conn, current_time, end_time, batch_ids):
     query = """SELECT
                     ps.post_id,
@@ -60,7 +60,7 @@ We used a PostgreSQL database to store everything and retrieved data via the (no
 Sentiment analysis was done with a basic sentiment analysis library (the 'ratio' key) and then finally everything was uploaded to the database
 
 ### Preparation I wrote before backpropogation:
-```
+```python
     sort_weight_matrix = [
         np.arange(size, 0, -1, dtype=float) for size in data_shape
     ]
@@ -100,7 +100,7 @@ Sentiment analysis was done with a basic sentiment analysis library (the 'ratio'
 We essentially wanted to make the data readable for an LSTM type output and decided on an LSTM because it intuitively matched how we understood time series data (We also cherry picked some random research papers to support our claims).
 
 ### A simple word cloud I wrote to visualize our database
-```
+```python
 # this line is an array to help split the learning of the agent using ml
 from sklearn.model_selection import train_test_split
 
