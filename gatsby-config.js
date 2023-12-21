@@ -7,7 +7,7 @@ module.exports = {
     // Main Site Title
     title: `Truman Costello`,
     // Description that goes under your name in main bio
-    description: `Student of  Computer Science, Game Development, and Applied & Computational Math at the University of Southern California.`,
+    description: `Computer Science, Game Development, and Applied & Computational Math @ the University of Southern California.`,
     // Optional: Github account URL
     github: `https://github.com/trooms`,
     // Content of the About Me section
@@ -15,23 +15,6 @@ module.exports = {
             <br>I'm currently working on a project focused on bringing applications of machine learning to education.
             <br>Apart from school, I take care of my dog Sloane and work as a server at a local off-campus restaurant 'Study Hall'.`,
     // Optional: List your education, they must have `name` and `description`. `link` is optional.
-    education: [
-      {
-        date: 'May 2025',
-        name: 'B.S. Computer Science (Games), B.S. Applied & Computational Mathematics',
-        description: 'Viterbi School Computing Science, School of Cinematic Arts, Dornsife College of Letters Arts & Sciences',
-      },
-      {
-        date: 'Sep. 2019 - Mar. 2020',
-        name: 'Rotary International High School Exchange Student',
-        description:
-          '양명고등학교',
-      },
-      {
-        date: 'Jun. 2019',
-        name: 'Healdsburg High',
-      },
-    ],
     projects: [
       {
         date: 'Feb 2023 - Present',
@@ -50,6 +33,24 @@ module.exports = {
         date: 'Jun. 2021 - May 2021',
         name: 'Microsoft',
         description: 'Technical Resilience Mentee',
+      },
+    ],
+    education: [
+      {
+        date: 'May 2025',
+        name: 'B.S. Computer Science (Games), B.S. Applied & Computational Mathematics',
+        description: 'Viterbi School Computing Science, School of Cinematic Arts, Dornsife College of Letters Arts & Sciences',
+      },
+      {
+        date: 'Sep. 2019 - Mar. 2020',
+        name: 'Rotary International High School Exchange Student',
+        description:
+          '양명고등학교',
+      },
+      {
+        date: 'Jun. 2019',
+        name: 'Healdsburg High School',
+        description: 'Went to three different high schools. '
       },
     ],
   },
