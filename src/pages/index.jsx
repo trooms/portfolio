@@ -14,7 +14,7 @@ import Seo from '../components/seo';
 const Index = ({ data }) => {
   const about = get(data, 'site.siteMetadata.about', false);
   const education = get(data, 'site.siteMetadata.education', false);
-  const projects = get(data, 'site.siteMetadata.projects', false);
+  const projects = data.allMarkdownRemark.edges;
   const experience = get(data, 'site.siteMetadata.experience', false);
 
   return (
