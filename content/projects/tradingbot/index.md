@@ -3,11 +3,6 @@ type: project
 title: Sentiment Trading Bot
 description: 'LSTM recurrent neural net creating expected stock price changes based on social media sentiment around a given stock'
 ---
-
-```
-
-```
-
 ## Argus 
 > Argus Panoptes (All-seeing; Ancient Greek: Ἄργος Πανόπτης) or Argos (Ancient Greek: Ἄργος) is a many-eyed giant in Greek mythology. The figure is known for having generated the saying "the eyes of Argus", as in to be "followed by the eyes of Argus", or "trailed by" them, or "watched by" them, etc.
 > - [Wikipedia](https://en.wikipedia.org/wiki/Argus_Panoptes)

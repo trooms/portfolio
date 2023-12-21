@@ -7,19 +7,20 @@ description: 'Online code judge application based on Java code input and expecte
 This was the first project I've done where project management and careful planning was integral to execution. We used the Waterfall method to linearly approach project development
 
 ## Overview
-LeetScope is a code judge platform for teachers and students from programming classes to create, manage, submit, grade, and review programming assignment. We supported C++ file uploads.
+LeetScope was an online code judge platform for teachers and students to create, manage, submit, grade, and review programmings assignment. We supported C++ file uploads.
 
 ## Front End
 For users, there are three page states:
 
-### Guest 
+#### Guest 
 <img src="./guest.png" width="240px"/>
 Guests could view assignments and register/login.
+
 <img src="./registration.png" height="240px"/>
 
 #### Teacher
 <img src="./teacher.png" width="240px"/>
-Tachers were able to create assignments where each had set custom deadlines, allowed attempts, and an expected output in txt format. They were also able to manage and edit all paramaters of the assignments (postponing the deadline, increasing the number of allowed attempts, etc).
+Teachers were able to create assignments where each had set custom deadlines, allowed attempts, and an expected output in txt format. They were also able to manage and edit all paramaters of the assignments (postponing the deadline, increasing the number of allowed attempts, etc).
 
 #### Student
 <img src="./student.png" width="240px"/>
