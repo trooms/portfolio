@@ -45,16 +45,18 @@ export const pageQuery = graphql`
         author
         github
         linkedin
-        updates {
+        projects {
           date
           name
           description
         }
         experience {
+          date
           name
           description
         }
-        skills {
+        education {
+          date
           name
           description
         }
