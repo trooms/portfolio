@@ -38,22 +38,25 @@ module.exports = {
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
       {
-        date: 'May 2021 - Jul. 2021',
-        name: 'IoTOne',
+        date: 'Remote | May 2021 - Jul. 2021',
+        name: 'IoT ONE',
         description: 'UX / UI Design Fellow',
-        tools: 'Figma'
+        tools: 'Figma',
+        link: 'https://www.iotone.com/'
       },
       {
-        date: 'Jun. 2021 - May 2021',
+        date: 'Remote | Jun. 2021 - May 2021',
         name: 'Microsoft',
         description: 'Technical Resilience Mentee',
-        tools: 'C++'
+        tools: 'C++',
+        link: 'https://csatuwaterloo.blogspot.com/2021/01/microsoft-mentorship-program-for-junior.html'
       },
       {
-        date: 'Jun. 2021 - May 2021',
+        date: 'Santa Rosa, CA | Jun. 2021 - May 2021',
         name: 'Keysight Technologies',
         description: 'Telemetry Software Development Intern ',
-        tools: 'C++'
+        tools: 'C++',
+        link: 'https://www.keysight.com/us/en/home.html'
       },
     ],
     education: [
