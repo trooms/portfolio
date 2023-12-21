@@ -19,7 +19,6 @@ const Index = ({ data }) => {
       <Seo title={'Home'} />
       <Header metadata={data.site.siteMetadata} />
       {about && <SectionAbout about={about} />}
-      {updates && updates.length && <SectionUpdates updates={updates} />}
       {education && education.length && (
         <SectionEducation education={education} />
       )}
