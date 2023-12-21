@@ -61,7 +61,7 @@ const Header = ({ metadata = {}}) => {
           )}
           <li className={classes.item}>
               <Link className={classes.link} to="/projects">
-                Blog
+                Projects
               </Link>
           </li>
         </ul>

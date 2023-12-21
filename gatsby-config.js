@@ -48,9 +48,9 @@ module.exports = {
           '양명고등학교',
       },
       {
-        date: 'Jun. 2019',
+        date: 'Grad. Jun. 2019',
         name: 'Healdsburg High School',
-        description: 'Went to three different high schools. '
+        description: 'Also attended (for a short time) Central Catholic High School in Portland, OR and Mark Morris High School in Longview, WA.'
       },
     ],
   },

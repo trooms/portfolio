@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
       <svg
         className={classes.svg}
         width="404"
-        height="784"
+        height="700"
         fill="none"
         viewBox="0 0 404 784"
       >
@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
         </defs>
         <rect
           width="404"
-          height="784"
+          height="700"
           fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)"
         />
       </svg>
