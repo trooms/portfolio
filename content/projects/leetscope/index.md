@@ -13,16 +13,16 @@ LeetScope is a code judge platform for teachers and students from programming cl
 For users, there are three page states:
 
 ### Guest 
-![guest](./guest.png =250x)
+![wide](./guest.png)
 Guests could view assignments and register/login.
-![registration](./registration.png =x250)
+![tall](./registration.png)
 
 #### Teacher
-![teacher](./teacher.png =250x)
+![wide](./teacher.png)
 Tachers were able to create assignments where each had set custom deadlines, allowed attempts, and an expected output in txt format. They were also able to manage and edit all paramaters of the assignments (postponing the deadline, increasing the number of allowed attempts, etc).
 
 #### Student
-![student](./student.png =250x)
+![wide](./student.png)
 Students could submit C++ and Java files to be graded for each individual assignment. They were intended to take some input from the console (which the backend would provide) and print an output into a console (which the backend would then process).
 
 ## Project Flow
@@ -50,7 +50,7 @@ public class CorsConfig implements WebMvcConfigurer {
 
 ### Database
 The database had a fairly straightforward design and flow. MySQL would be called via the JDBC API which would flow to MyBatisPlus into Springboot and eventually the frontend.
-![database](./database.png =250x)
+![wide](./database.png)
 
 ### Login Security
 We did basic passcode hasing using MD5

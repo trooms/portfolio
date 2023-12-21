@@ -101,6 +101,9 @@
  * @author Joe Gibson (@gibsjose)
  */
 
+ img[alt=wide] { width: 50%; }
+ img[alt=long] { height: 50%; }
+
 code[class*='language-'],
 pre[class*='language-'] {
   color: #c5c8c6;
