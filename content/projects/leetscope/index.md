@@ -32,9 +32,9 @@ Students could submit C++ and Java files to be graded for each individual assign
 ## Project Flow
 The general project flow from front to back end was the following:
 
-Vue &rarr; Axios &rarr; Controller (SpringBoot) &rarr; Service (SpringBoot) &rarr;Mapper (MyBatis Plus) &rarr;DataBase (MySQL) &rarr;Response to Controller &rarr; Axios &rarr; Vue
+Vue.js &rarr; Axios &rarr; Controller (SpringBoot) &rarr; Service (SpringBoot) &rarr; Mapper (MyBatis Plus) &rarr; DataBase (MySQL) &rarr; Response to Controller &rarr; Axios &rarr; Vue.js
 
-User opens client: Vue + Element Plus &rarr; User has a request &rarr; Vue uses Axios send a request to backend &rarr; SpringBoot receives the request in controller &rarr; Controller calls Springboot service to process and get a result &rarr; SpringBoot send back the response to Axios &rarr; Axios process the response in callback function &rarr; Vue updates the web app after information is updated by callback function
+User opens client: Vue.js + Element Plus &rarr; User has a request &rarr; Vue.js uses Axios send a request to backend &rarr; SpringBoot receives the request in controller &rarr; Controller calls Springboot service to process and get a result &rarr; SpringBoot send back the response to Axios &rarr; Axios process the response in callback function &rarr; Vue.js updates the web app after information is updated by callback function
 
 ### Networking 
 We used cross-origin resource sharing to ensure security when transferring data between the browser and server.
