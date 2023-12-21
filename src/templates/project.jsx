@@ -27,6 +27,7 @@ const Project = ({ data }) => {
   );
 };
 
+
 export default Project;
 
 export const pageQuery = graphql`
@@ -49,6 +50,8 @@ export const pageQuery = graphql`
       frontmatter {
         type
         title
+        date
+        tools
         description
       }
     }
