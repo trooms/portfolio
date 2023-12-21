@@ -1,77 +1,94 @@
 module.exports = {
   siteMetadata: {
     // Site URL for when it goes live
-    siteUrl: `https://elastic-meninsky-aa7c74.netlify.app/`,
+    siteUrl: `https://trooms.dev`,
     // Your Name
-    name: 'Ryan Fitzgerald',
+    name: 'Truman Costello',
     // Main Site Title
-    title: `Ryan Fitzgerald | Full-Stack Developer`,
+    title: `Truman Costello`,
     // Description that goes under your name in main bio
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit, ipsum.`,
+    description: `PhD Candidate in Computer Science at the University of Glasgow.`,
     // Optional: Twitter account handle
-    author: `@rfitzio`,
+    author: `Truman Costello`,
     // Optional: Github account URL
-    github: `https://github.com/ryanfitzgerald`,
+    github: `https://github.com/claretb`,
     // Optional: LinkedIn account URL
-    linkedin: `https://www.linkedin.com/in/ryanafitzgerald/`,
+    linkedin: `https://www.linkedin.com/in/talhayranci/`,
     // Content of the About Me section
-    about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis porro cumque ea error ab voluptatem. Temporibus adipisci exercitationem similique itaque quibusdam laudantium, qui molestiae quas, aut amet animi id.`,
+    about: `I am a second-year PhD student in Computing Science at the University of Glasgow, under the supervision of Dr. Jonathan Grizou and Dr. Mireilla Bikanga Ada. My research focuses on tangible machine learning education.
+            \nApart from research, I like writing blogs, watching and playing football and exploring the beautiful places of Scotland. I also have a beginner's level interest in the philosophy of science.`,
+    extendedAbout: `You can find a brief overview of my background below. For a detailed CV, please click the resume link below.
+                    \nDon't hesitate to reach out to me through any of the contact channels above. I'm always open to engaging in discussions and sharing thoughts with others. Feel free to start conversations on any topics that align with my interests.`,
+    resumeLink: `https://drive.google.com/file/d/1_A4i1nKKJrhQVOx2BnGrbZmcEqf9Y_90/view?usp=drive_link`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
-    projects: [
+    updates: [
       {
-        name: 'Devfolio',
+        date: '15/09/2023',
+        name: 'My new website is live!',
         description:
-          'A zero-config and blazing fast personal site + blog built with GatsbyJs and TailwindCSS',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+          'As you can see now, I renewed my personal website. It is now more informative and minimalistic.',
       },
       {
-        name: 'ChromeExtensionKit',
+        date: '29/08/2023',
+        name: '🎉 I have passed my first APR!',
         description:
-          'Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates',
-        link: 'https://chromeextensionkit.com/?ref=devfolio',
+          'Although I need to do some changes on my report, I am now a second year PhD.',
+      },
+    ],
+    // Optional: List your education, they must have `name` and `description`. `link` is optional.
+    education: [
+      {
+        date: 'Nov 2022 - Present',
+        name: 'Doctor of Philosophy',
+        description: 'School of Computing Science, University of Glasgow',
       },
       {
-        name: 'Another Cool Project',
+        date: 'Sep. 2021 - Sep 2022',
+        name: "Master's Degree",
         description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit ducimus perferendis',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+          'Robotics and Artificial Intelligence, University of Glasgow',
+      },
+      {
+        date: 'Jul. 2015 - Jun. 2019',
+        name: "Bachelor's Degree",
+        description: 'Computer Engineering, Konya Technical University',
       },
     ],
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
       {
-        name: 'Acme Corp',
-        description: 'Full-Stack Developer, February 2020 - Present',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        date: 'Sep 2023 - Present',
+        name: 'Teaching Assistant',
+        description: 'University of Glasgow',
       },
       {
-        name: 'Globex Corp',
-        description: 'Full-Stack Developer, December 2017 - February 2020',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        date: 'Jun 2023 - Present',
+        name: 'Software Developer',
+        description: 'University of Glasgow Software Services',
       },
       {
-        name: 'Hooli',
-        description: 'Full-Stack Developer, May 2015 - December 2017',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        date: 'Feb 2020 - Sep 2021',
+        name: 'Software Engineer',
+        description: 'PostDICOM, Medical Image Processing',
       },
     ],
     // Optional: List your skills, they must have `name` and `description`.
-    skills: [
-      {
-        name: 'Languages & Frameworks',
-        description:
-          'JavaScript (ES6+), Golang, Node.js, Express.js, React, Ruby on Rails, PHP',
-      },
-      {
-        name: 'Databases',
-        description: 'MongoDB, PostreSQL, MySQL',
-      },
-      {
-        name: 'Other',
-        description:
-          'Docker, Amazon Web Services (AWS), CI / CD, Microservices, API design, Agile / Scrum',
-      },
-    ],
+    // skills: [
+    //   {
+    //     name: 'Languages & Frameworks',
+    //     description:
+    //       'JavaScript (ES6+), Golang, Node.js, Express.js, React, Ruby on Rails, PHP',
+    //   },
+    //   {
+    //     name: 'Databases',
+    //     description: 'MongoDB, PostreSQL, MySQL',
+    //   },
+    //   {
+    //     name: 'Other',
+    //     description:
+    //       'Docker, Amazon Web Services (AWS), CI / CD, Microservices, API design, Agile / Scrum',
+    //   },
+    // ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -80,6 +97,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/projects`,
+        name: `project`,
       },
     },
     {
@@ -115,7 +139,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
-    `gatsby-plugin-feed`,
+    // `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -125,8 +149,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `devfolio`,
-        short_name: `devfolio`,
+        name: `talhayranci.com`,
+        short_name: `talhayranci.com`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`, // This color appears on mobile
