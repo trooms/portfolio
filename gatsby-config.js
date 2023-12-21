@@ -71,7 +71,7 @@ module.exports = {
       {
         date: 'Healdsburg, CA | Grad. Jun. 2019',
         name: 'Healdsburg High School',
-        description: 'Also attended (for a week) Central Catholic in Portland, OR and  (freshman year) Mark Morris High School in Longview, WA.'
+        description: 'Also attended (for a week) Central Catholic in Portland, OR and  (freshman year) Mark Morris High School in Longview, WA'
       },
     ],
   },
