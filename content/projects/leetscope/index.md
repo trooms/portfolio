@@ -1,7 +1,9 @@
 ---
 type: project
 title: Code Judge Platform
-description: 'Online code judge application based on Java code input and expected console print statements'
+date: 'Oct. 2023 - Dec. 2023',
+description: 'Online code judge application based on C++ code input and expected console print statements'
+tools: 'Vue.js | Java Springboot | MySQL'
 ---
 ## Leetscope
 This was the first project I've done where project management and careful planning was integral to execution. We used the Waterfall method to linearly approach project development
