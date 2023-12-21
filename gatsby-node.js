@@ -35,8 +35,6 @@ exports.createPages = async ({ graphql, actions }) => {
     (edge) => edge.node.frontmatter.type === 'blog'
   );
 
-  // Create projects pages.
-
   projects.forEach((project, index) => {
     const previous =
       index === projects.length - 1 ? null : projects[index + 1].node;
