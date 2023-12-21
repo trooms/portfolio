@@ -35,7 +35,16 @@ const SummaryItem = ({
       </h3>
       {date && <h3 className={classes.date}>{date}</h3>}
       {tools && <h3 className={classes.tools}>{tools}</h3>}
-      <p className={classes.description}>{description}</p>
+      <p 
+        className={classes.description}
+        style={{
+            wordWrap: 'break-word', /* IE>=5.5 */
+            whiteSpace: 'pre', /* IE>=6 */
+            whiteSpace: '-moz-pre-wrap', /* For Fx<=2 */
+            whiteSpace: 'pre-wrap' /* Fx>3, Opera>8, Safari>3*/
+        }}>
+        {description}
+    </p>
     </div>
   );
 };
