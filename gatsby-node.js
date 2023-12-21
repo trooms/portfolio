@@ -51,7 +51,26 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
-  // Create blog posts pages.
+  // Create projects pages.
+  
+  projects.forEach((project, index) => {
+    const previous =
+      index === projects.length - 1 ? null : projects[index + 1].node;
+    const next = index === 0 ? null : projects[index - 1].node;
+
+    createPage({
+      path: project.node.fields.slug,
+      component: projectTemplate,
+      context: {
+        slug: project.node.fields.slug,
+        previous,
+        next,
+      },
+    });
+  });
+
+
+  // Create project posts pages.
 
   posts.forEach((post, index) => {
     const previous = index === posts.length - 1 ? null : posts[index + 1].node;

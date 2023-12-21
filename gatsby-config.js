@@ -15,7 +15,7 @@ module.exports = {
             \nI'm currently working on a project focused on bringing applications of machine learning to education.
             \nApart from school, I take care of my dog Sloane and work as a server at Study Hall, a local off-campus restaurant.`,
     // Optional: List your education, they must have `name` and `description`. `link` is optional.
-    projects: [
+    /*projects: [
       {
         date: 'Feb 2023 - Present',
         name: 'Cognify',
@@ -34,7 +34,7 @@ module.exports = {
         description: 'LSTM recurrent neural net creating expected stock price changes based on social media sentiment around a given stock',
         tools: 'Python | Pandas | PyTorch'
       },
-    ],
+    ],*/
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
       {
