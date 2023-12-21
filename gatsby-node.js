@@ -121,9 +121,7 @@ exports.createSchemaCustomization = ({ actions }) => {
 
     type SectionItem {
       name: String!
-      date: String
       description: String!
-      tools: String
       link: String
     }
 
