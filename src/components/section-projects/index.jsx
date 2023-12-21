@@ -14,7 +14,7 @@ const SectionProjects = ({ projects }) => {
           date={project.date}
           name={project.name}
           description={project.description}
-          link={project.link}
+          link={project.node.fields.slug}
           tools={project.tools}
         />
       ))}
