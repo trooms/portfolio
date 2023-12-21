@@ -13,7 +13,7 @@ module.exports = {
     // Optional: Github account URL
     github: `https://github.com/claretb`,
     // Optional: LinkedIn account URL
-    linkedin: `https://www.linkedin.com/in/talhayranci/`,
+    linkedin: `https://www.linkedin.com/in/trumancostello/`,
     // Content of the About Me section
     about: `I am a second-year PhD student in Computing Science at the University of Glasgow, under the supervision of Dr. Jonathan Grizou and Dr. Mireilla Bikanga Ada. My research focuses on tangible machine learning education.
             \nApart from research, I like writing blogs, watching and playing football and exploring the beautiful places of Scotland. I also have a beginner's level interest in the philosophy of science.`,
@@ -149,8 +149,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `talhayranci.com`,
-        short_name: `talhayranci.com`,
+        name: `trooms.dev`,
+        short_name: `trooms.dev`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`, // This color appears on mobile
