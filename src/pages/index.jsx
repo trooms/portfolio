@@ -6,7 +6,6 @@ import Header from '../components/header';
 import Layout from '../components/layout';
 import SectionAbout from '../components/section-about';
 import Seo from '../components/seo';
-import SectionUpdates from '../components/section-updates';
 
 const Index = ({ data }) => {
   const about = get(data, 'site.siteMetadata.extendedAbout', false);
