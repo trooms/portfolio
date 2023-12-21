@@ -57,8 +57,11 @@ async def get_tier_outcome(conn, batch_ids):
     result = await conn.fetch(query, batch_ids)
     return result
 ```
+We used a PostgreSQL database to store everything and retrieved data via the (now deprecated) Reddit API.
 
-#### Preparation I wrote before backpropogation:
+Sentiment analysis was done with a basic sentiment analysis library (the 'ratio' key) and then finally everything was uploaded to the database
+
+### Preparation I wrote before backpropogation:
 ```
     sort_weight_matrix = [
         np.arange(size, 0, -1, dtype=float) for size in data_shape
@@ -96,7 +99,9 @@ async def get_tier_outcome(conn, batch_ids):
     tier_outcome = torch.tensor(tier_outcome).float().to(device, non_blocking=True)
 ```
 
-#### A simple word cloud I wrote to visualize our database
+We essentially wanted to make the data readable for an LSTM type output and decided on an LSTM because it intuitively matched how we understood time series data (We also cherry picked some random research papers to support our claims).
+
+### A simple word cloud I wrote to visualize our database
 ```
 # this line is an array to help split the learning of the agent using ml
 from sklearn.model_selection import train_test_split
@@ -173,3 +178,6 @@ wordcloud_draw(train_pos, "white")
 print("Negative words")
 wordcloud_draw(train_neg)
 ```
+
+## Final Thoughts
+Overall the project was an intensely rewarding introduction to software development in teams. I learned a lot about fast-paced development and various applications of advanced computer science.
