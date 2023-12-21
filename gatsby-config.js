@@ -7,88 +7,50 @@ module.exports = {
     // Main Site Title
     title: `Truman Costello`,
     // Description that goes under your name in main bio
-    description: `PhD Candidate in Computer Science at the University of Glasgow.`,
-    // Optional: Twitter account handle
-    author: `Truman Costello`,
+    description: `Studying Computer Science, Game Development, and Applied & Computational Math at the University of Southern California.`,
     // Optional: Github account URL
-    github: `https://github.com/claretb`,
-    // Optional: LinkedIn account URL
-    linkedin: `https://www.linkedin.com/in/trumancostello/`,
+    github: `https://github.com/trooms`,
     // Content of the About Me section
-    about: `I am a second-year PhD student in Computing Science at the University of Glasgow, under the supervision of Dr. Jonathan Grizou and Dr. Mireilla Bikanga Ada. My research focuses on tangible machine learning education.
-            \nApart from research, I like writing blogs, watching and playing football and exploring the beautiful places of Scotland. I also have a beginner's level interest in the philosophy of science.`,
-    extendedAbout: `You can find a brief overview of my background below. For a detailed CV, please click the resume link below.
-                    \nDon't hesitate to reach out to me through any of the contact channels above. I'm always open to engaging in discussions and sharing thoughts with others. Feel free to start conversations on any topics that align with my interests.`,
-    resumeLink: `https://drive.google.com/file/d/1_A4i1nKKJrhQVOx2BnGrbZmcEqf9Y_90/view?usp=drive_link`,
-    // Optional: List your projects, they must have `name` and `description`. `link` is optional.
-    updates: [
-      {
-        date: '15/09/2023',
-        name: 'My new website is live!',
-        description:
-          'As you can see now, I renewed my personal website. It is now more informative and minimalistic.',
-      },
-      {
-        date: '29/08/2023',
-        name: '🎉 I have passed my first APR!',
-        description:
-          'Although I need to do some changes on my report, I am now a second year PhD.',
-      },
-    ],
+    about: `I am a third-year bachelors student in Computing Science (Games) and AMCM at the University of Southern California. I'm currently working on a project focused on bringing applications of machine learning to education.
+            \nApart from school, I take care of my dog Sloane and work as a server at a local off-campus restaurant 'Study Hall'.`,
     // Optional: List your education, they must have `name` and `description`. `link` is optional.
     education: [
       {
-        date: 'Nov 2022 - Present',
-        name: 'Doctor of Philosophy',
-        description: 'School of Computing Science, University of Glasgow',
+        date: 'May 2025',
+        name: 'B.S. Computer Science (Games), B.S. Applied & Computational Mathematics',
+        description: 'Viterbi School Computing Science, School of Cinematic Arts, Dornsife College of Letters Arts & Sciences',
       },
       {
-        date: 'Sep. 2021 - Sep 2022',
-        name: "Master's Degree",
+        date: 'Sep. 2019 - Mar. 2020',
+        name: 'Rotary International High School Exchange Student',
         description:
-          'Robotics and Artificial Intelligence, University of Glasgow',
+          '양명고등학교',
       },
       {
-        date: 'Jul. 2015 - Jun. 2019',
-        name: "Bachelor's Degree",
-        description: 'Computer Engineering, Konya Technical University',
+        date: 'Jun. 2019',
+        name: 'Healdsburg High',
+      },
+    ],
+    projects: [
+      {
+        date: 'Feb 2023 - Present',
+        name: 'Cognify',
+        description: 'Education app using a stochastic shortest path algorithm for optimizing spaced repetition scheduling',
       },
     ],
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
       {
-        date: 'Sep 2023 - Present',
-        name: 'Teaching Assistant',
-        description: 'University of Glasgow',
+        date: 'May 2021 - Jul. 2021',
+        name: 'IoTOne',
+        description: 'UX / UI Design Fellow',
       },
       {
-        date: 'Jun 2023 - Present',
-        name: 'Software Developer',
-        description: 'University of Glasgow Software Services',
-      },
-      {
-        date: 'Feb 2020 - Sep 2021',
-        name: 'Software Engineer',
-        description: 'PostDICOM, Medical Image Processing',
+        date: 'Jun. 2021 - May 2021',
+        name: 'Microsoft',
+        description: 'Technical Resilience Mentee',
       },
     ],
-    // Optional: List your skills, they must have `name` and `description`.
-    // skills: [
-    //   {
-    //     name: 'Languages & Frameworks',
-    //     description:
-    //       'JavaScript (ES6+), Golang, Node.js, Express.js, React, Ruby on Rails, PHP',
-    //   },
-    //   {
-    //     name: 'Databases',
-    //     description: 'MongoDB, PostreSQL, MySQL',
-    //   },
-    //   {
-    //     name: 'Other',
-    //     description:
-    //       'Docker, Amazon Web Services (AWS), CI / CD, Microservices, API design, Agile / Scrum',
-    //   },
-    // ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
