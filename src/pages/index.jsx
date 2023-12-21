@@ -72,6 +72,7 @@ export const pageQuery = graphql`
             type
             date
             title
+            tools
             description
           }
         }
