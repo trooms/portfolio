@@ -20,6 +20,12 @@ module.exports = {
         date: 'Feb 2023 - Present',
         name: 'Cognify',
         description: 'Education app using a stochastic shortest path algorithm for optimizing spaced repetition scheduling',
+        tools: 'React'
+      },
+      {
+        date: 'Oct. 2023 - Dec. 2023',
+        name: 'LeetScope',
+        description: 'Online code judge application based on Java code input and expected console print statements',
       },
     ],
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.

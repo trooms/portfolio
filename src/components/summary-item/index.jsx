@@ -13,6 +13,7 @@ const SummaryItem = ({
   name,
   description,
   link = false,
+  tools = null,
   internal = false,
 }) => {
   let linkContent;
@@ -32,6 +33,7 @@ const SummaryItem = ({
         {link ? linkContent : name}
       </h3>
       {date && <h3 className={classes.date}>{date}</h3>}
+      {tools && <h3 className={classes.tools}>{tools}</h3>}
       <p className={classes.description}>{description}</p>
     </div>
   );
