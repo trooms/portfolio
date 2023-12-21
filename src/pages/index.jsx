@@ -53,6 +53,7 @@ export const pageQuery = graphql`
           name
           description
           tools
+          link
         }
         education {
           date
