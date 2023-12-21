@@ -13,7 +13,7 @@ LeetScope is a code judge platform for teachers and students from programming cl
 For users, there are three page states:
 
 ### Guest 
-![wide](./guest.png)
+![guest](./guest.png"){:height="36px"}
 Guests could view assignments and register/login.
 ![tall](./registration.png)
 
