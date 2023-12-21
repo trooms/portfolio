@@ -20,12 +20,19 @@ module.exports = {
         date: 'Feb 2023 - Present',
         name: 'Cognify',
         description: 'Education app using a stochastic shortest path algorithm for optimizing spaced repetition scheduling',
-        tools: 'React'
+        tools: 'Expo (React Native) + Tauri'
       },
       {
         date: 'Oct. 2023 - Dec. 2023',
         name: 'LeetScope',
         description: 'Online code judge application based on Java code input and expected console print statements',
+        tools: 'Vue.js | Java Springboot'
+      },
+      {
+        date: 'Feb. 2021 - Jan. 2022',
+        name: 'Sentiment Trading Bot',
+        description: 'LSTM recurrent neural net creating expected stock price changes based on social media sentiment around a given stock',
+        tools: 'Python | Pandas | PyTorch'
       },
     ],
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
@@ -34,11 +41,19 @@ module.exports = {
         date: 'May 2021 - Jul. 2021',
         name: 'IoTOne',
         description: 'UX / UI Design Fellow',
+        tools: 'Figma'
       },
       {
         date: 'Jun. 2021 - May 2021',
         name: 'Microsoft',
         description: 'Technical Resilience Mentee',
+        tools: 'C++'
+      },
+      {
+        date: 'Jun. 2021 - May 2021',
+        name: 'Keysight Technologies',
+        description: 'Telemetry Software Development Intern ',
+        tools: 'C++'
       },
     ],
     education: [

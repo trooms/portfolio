@@ -6,6 +6,7 @@ const classes = {
   name: 'font-semibold text-gray-900 pb-1',
   date: 'italic text-gray-600 pb-1',
   description: 'text-md text-gray-600 font-light',
+  tools: 'italic text-gray-600 pb-1',
 };
 
 const SummaryItem = ({
