@@ -61,7 +61,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    allMarkdownRemark(sort: { frontmatter: { date: DESC } }, limit: 5) {
+    allMarkdownRemark(sort: { frontmatter: { index: DESC } }, limit: 5) {
       edges {
         node {
           excerpt
@@ -69,6 +69,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
+            index
             type
             date
             title

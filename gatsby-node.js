@@ -8,7 +8,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const blogPostTemplate = path.resolve(`./src/templates/blog-post.jsx`);
   const result = await graphql(`
     {
-      allMarkdownRemark(sort: {frontmatter: {date: DESC}}, limit: 1000) {
+      allMarkdownRemark(sort: {frontmatter: {index: DESC}}, limit: 1000) {
         edges {
           node {
             fields {
@@ -133,6 +133,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
 
     type Frontmatter {
+      index: int
       type: String
       title: String
       description: String

@@ -42,7 +42,7 @@ export const pageQuery = graphql`
         linkedin
       }
     }
-    allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
+    allMarkdownRemark(sort: {frontmatter: {index: DESC}}) {
       edges {
         node {
           excerpt
@@ -50,6 +50,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
+            index
             type
             date
             title
