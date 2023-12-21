@@ -35,6 +35,11 @@ const Header = ({ metadata = {}}) => {
         </h1>
         <p className={classes.description}>{metadata.description}</p>
         <ul className={classes.list}>
+          <li className={classes.item}>
+              <Link className={classes.link} to="/projects">
+                Projects
+              </Link>
+          </li>
           {twitter && (
             <li className={classes.item}>
               <a
@@ -59,11 +64,6 @@ const Header = ({ metadata = {}}) => {
               </a>
             </li>
           )}
-          <li className={classes.item}>
-              <Link className={classes.link} to="/projects">
-                Projects
-              </Link>
-          </li>
         </ul>
       </div>
     </div>

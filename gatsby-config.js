@@ -7,7 +7,7 @@ module.exports = {
     // Main Site Title
     title: `Truman Costello`,
     // Description that goes under your name in main bio
-    description: `Computer Science, Game Development, and Applied & Computational Math @ the University of Southern California.`,
+    description: `Computer Science, Game Development, and Applied & Computational Math @ USC`,
     // Optional: Github account URL
     github: `https://github.com/trooms`,
     // Content of the About Me section
