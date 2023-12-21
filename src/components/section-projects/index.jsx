@@ -14,7 +14,7 @@ const SectionProjects = ({ projects }) => {
           date={project.node.frontmatter.date}
           name={project.node.frontmatter.title}
           description={project.node.frontmatter.description}
-          tools={post.node.frontmatter.tools}
+          tools={project.node.frontmatter.tools}
           link={project.node.fields.slug}
           internal
         />
