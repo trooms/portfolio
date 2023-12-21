@@ -52,7 +52,7 @@ exports.createPages = async ({ graphql, actions }) => {
   });
 
   // Create projects pages.
-  
+
   projects.forEach((project, index) => {
     const previous =
       index === projects.length - 1 ? null : projects[index + 1].node;
@@ -134,7 +134,8 @@ exports.createSchemaCustomization = ({ actions }) => {
       type: String
       title: String
       description: String
-      date: Date @dateformat
+      date: String
+      tools: String
     }
     
     type Fields {
