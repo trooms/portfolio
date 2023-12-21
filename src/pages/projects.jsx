@@ -26,6 +26,7 @@ const Index = ({ data }) => {
   );
 };
 
+
 export default Index;
 
 export const pageQuery = graphql`
@@ -50,9 +51,10 @@ export const pageQuery = graphql`
           }
           frontmatter {
             type
-            date(formatString: "MMMM DD, YYYY")
+            date
             title
             description
+            tools
           }
         }
       }
