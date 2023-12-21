@@ -59,8 +59,8 @@ module.exports = {
     education: [
       {
         date: 'May 2025',
-        name: 'B.S. Computer Science (Games), B.S. Applied & Computational Mathematics',
-        description: 'Viterbi School Computing Science, School of Cinematic Arts, Dornsife College of Letters Arts & Sciences',
+        name: 'B.S. Computer Science (Games) | B.S. Applied & Computational Mathematics',
+        description: 'University of Southern California\nViterbi School Computing Science | School of Cinematic Arts | Dornsife College of Letters Arts & Sciences',
       },
       {
         date: 'Ansan-si, Gyeonggi-do, South Korea | Sep. 2019 - Mar. 2020',
