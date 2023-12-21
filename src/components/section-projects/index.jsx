@@ -11,7 +11,7 @@ const SectionProjects = ({ projects }) => {
       {projects.map((project) => (
         <SummaryItem
           key={project.name}
-          date={item.date}
+          date={project.date}
           name={project.name}
           description={project.description}
           link={project.link}
