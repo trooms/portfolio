@@ -36,8 +36,6 @@ export const pageQuery = graphql`
       siteMetadata {
         name
         title
-        date
-        tools
         description
         about
         author

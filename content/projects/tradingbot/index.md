@@ -1,8 +1,8 @@
 ---
-index: 2
+index: 0
 type: project
 title: Sentiment Trading Bot
-date: 'Feb. 2021 - Jan. 2022'
+date: 'Feb. 2020 - Jan. 2021'
 description: 'LSTM recurrent neural net creating expected stock price changes based on social media sentiment around a given stock'
 tools: 'Python | Pandas | PyTorch | PostegreSQL'
 ---

@@ -3,10 +3,9 @@ index: 1
 type: project
 title: ColorBounce
 date: 'Apr. 2021 - May 2021'
-description: '2D Physics Puzzle Game'
+description: 'One Button Arcade Style Game'
 tools: 'Unity2D'
 ---
-## ColorBounce
 First "finished" game I've made. Made in a prototyping course. Fun arcade type game that seems like it exists before, but I don't think it does. Let me know if you find a clone!
 ### Instructions
 You can use the spacebar to play (that's how the original game was), the left/right was mostly intended for mobile but obviously its tough to do in the browser.
