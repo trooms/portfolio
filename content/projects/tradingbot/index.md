@@ -1,5 +1,5 @@
 ---
-index: 0
+index: 1
 type: project
 title: Sentiment Trading Bot
 date: 'Feb. 2020 - Jan. 2021'

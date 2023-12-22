@@ -1,5 +1,5 @@
 ---
-index: 2
+index: 3
 type: project
 title: LightRide
 date: 'May. 2022 - Jun. 2022 | Prototype'

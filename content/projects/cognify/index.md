@@ -1,5 +1,5 @@
 ---
-index: 5
+index: 6
 type: project
 title: AI  Powered Education App
 date: 'Feb 2023 - Present'
