@@ -62,7 +62,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    allMarkdownRemark(sort: { frontmatter: { index: DESC } }, limit: 5) {
+    allMarkdownRemark(sort: { frontmatter: { index: DESC } }) {
       edges {
         node {
           excerpt
