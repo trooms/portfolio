@@ -40,7 +40,7 @@ As a web build it is TERRIBLY OPTIMIZED to run purely on CPU via WASM. There is 
 ## Trailer
 Here is some actual gameplay and a trailer we made for a games class at usc
 <iframe width="420" height="315"
-src="https://www.youtube.com/embed/hmuE7-T4zCE?autoplay=1&mute=1&loop=1&controls=0">
+src="https://www.youtube.com/embed/hmuE7-T4zCE?autoplay=1&mute=1&loop=1&controls=0&rel=0&showinfo=0&color=white&iv_load_policy=3&playlist=hmuE7-T4zCE">
 </iframe>
 
 
