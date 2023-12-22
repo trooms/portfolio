@@ -45,14 +45,14 @@ module.exports = {
         link: 'https://www.iotone.com/'
       },
       {
-        date: 'Remote | Jun. 2021 - May 2021',
+        date: 'Remote | Jan. 2021 - May 2021',
         name: 'Microsoft',
         description: 'Technical Resilience Mentee',
         tools: 'C++',
         link: 'https://csatuwaterloo.blogspot.com/2021/01/microsoft-mentorship-program-for-junior.html'
       },
       {
-        date: 'Santa Rosa, CA | Jun. 2021 - May 2021',
+        date: 'Santa Rosa, CA | Jan. 2019 - May 2019',
         name: 'Keysight Technologies',
         description: 'Telemetry Software Development Intern ',
         tools: 'C++',
