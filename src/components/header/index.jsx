@@ -65,7 +65,7 @@ const Header = ({ metadata = {}}) => {
             </li>
           )}
           <li className={classes.item}>
-              <Link className={classes.link} to="/resume.pdf">
+              <Link className={classes.link} href="resume.pdf">
                 Resume
               </Link>
           </li>
