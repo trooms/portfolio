@@ -29,25 +29,24 @@ void RotateMainCamera()
     mouseInput.y *= sensY;
 
     currentLook.x += mouseInput.x;
-    currentLook.y = Mathf.Clamp(currentLook.y += mouseInput.y, -90, 90);
+    currentLook.y = Mathf.Clamp(currentLook.y + mouseInput.y, -90, 90);
 
-    Quaternion lastRot = transform.localRotation;
-    transform.localRotation = Quaternion.AngleAxis(-currentLook.y, Vector3.right);
-    transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, curTilt);
-    transform.root.transform.localRotation = Quaternion.Euler(0, currentLook.x, 0);
+    // Calculate horizontal and vertical rotation as quaternions
+    Quaternion horizontalRotation = Quaternion.Euler(0, currentLook.x, 0);
+    Quaternion verticalRotation = Quaternion.Euler(-currentLook.y, 0, 0);
+
+    // Combine rotations and apply the tilt as a local rotation
+    transform.root.transform.localRotation = horizontalRotation;
+    transform.localRotation = verticalRotation * Quaternion.Euler(0, 0, curTilt);
 }
 ```
 Here I convert the  mouse input into camera rotation.
 
-The mouse input, which is a 2D vector representing the rotation along the X (pitch) and Y (yaw) axes, is converted into two quaternions.
-
-Quaternion.AngleAxis(-currentLook.y, Vector3.right) creates a quaternion representing rotation around the X-axis (Vector3.right). The negative sign is used to ensure that the rotation is in the correct direction (pitch).
-
-Quaternion.Euler(0, currentLook.x, 0) creates a quaternion representing rotation around the Y-axis for yaw.
+The horizontal and vertical rotations are calculated separately as Quaternion objects and then directly combined.
 
 Quaternion math was essential here for smooth rotations without gimbal lock issues.
 
-I had to do this all manually to compensate for the simplicity of my lean function, which was a lerp in FixedUpdate()
+I had to do this all manually to compensate for the simplicity of my lean function, which was a lerp in `FixedUpdate()`:
 
 ```cs
 fov = Mathf.Lerp(fov, baseFov, fovTimer / 0.5f);
@@ -559,8 +558,6 @@ public void Damage(float dmg, GameObject hitmarker)
     // TODO: gradually cover screen in blood as the player takes damage
 }
 ```
-
-
 
 
 ### Instructions
