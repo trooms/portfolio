@@ -6,17 +6,15 @@ export const onRouteUpdate = ({ location }) => {
     function initializeCanvas() {
         if (!scriptLoaded) {
             loadScriptsSequentially();
-           redrawCanvas();
+            redrawCanvas();
         } else {
-           redrawCanvas();
+            redrawCanvas();
         }
     }
 
    function redrawCanvas() {
-       // Call functions responsible for drawing on the canvas
-       // For example, if your introduction.js script has a function named 'initCanvas'
        if (typeof window.initCanvas === 'function') {
-            window.requestAnimationFrame(render);
+            window.initCanvas;
        }
    }
 

@@ -125,4 +125,8 @@ window.addEventListener('resize', onResize);
 createDots();
 
 // Render the scene
-window.requestAnimationFrame(render);
+if (!window.initCanvas) {
+  window.initCanvas = function() {
+    window.requestAnimationFrame(render);
+  }
+}
