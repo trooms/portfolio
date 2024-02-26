@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby';
 import moment from 'moment';
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import Header from '../components/header';
 import Layout from '../components/layout';
@@ -12,16 +12,8 @@ const classes = {
 };
 
 const Project = ({ data }) => {
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      window.onload = () => window.initCanvas();
-    } else {
-      window.initCanvas();
-    }
-    
-  }, []);
-
   const post = data.markdownRemark;
+
   return (
     <Layout>
       <Header metadata={data.site.siteMetadata} />
