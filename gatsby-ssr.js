@@ -1,4 +1,4 @@
-/*import React from "react";
+import React from "react";
 
 export function onRenderBody({ setHeadComponents }) {
     setHeadComponents([
@@ -32,4 +32,4 @@ export function onRenderBody({ setHeadComponents }) {
             }}
         />
     ]);
-}*/
+}
