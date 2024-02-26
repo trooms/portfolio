@@ -14,7 +14,7 @@ export const onRouteUpdate = ({ location }) => {
 
    function redrawCanvas() {
        if (typeof window.initCanvas === 'function') {
-            window.initCanvas;
+            window.initCanvas();
        }
    }
 
