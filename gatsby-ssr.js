@@ -17,13 +17,11 @@ export function onRenderBody({ setHeadComponents }) {
                 }
 
                 async function loadScriptsSequentially() {
-                    if (window.location.href.includes('/lightride/')) {
-                        try {
-                            await loadScript('/TweenMax.min.js');
-                            await loadScript('/introduction.js');
-                        } catch (error) {
-                            console.error("Script loading failed:", error);
-                        }
+                    try {
+                        await loadScript('/TweenMax.min.js');
+                        await loadScript('/introduction.js');
+                    } catch (error) {
+                        console.error("Script loading failed:", error);
                     }
                 }
 
