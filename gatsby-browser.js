@@ -1,13 +1,4 @@
 import './src/css/index.css';
-import {globalHistory} from '@reach/router';
-export const onInitialClientRender = () => {
-  /**
-   * This is a workaround for a bug in Gatsby
-   *
-   * See https://github.com/gatsbyjs/gatsby/issues/8357 for more details
-   */
-  globalHistory._onTransitionComplete();
-}
 
 let scriptLoaded = false;
 
@@ -15,8 +6,19 @@ export const onRouteUpdate = ({ location }) => {
     function initializeCanvas() {
         if (!scriptLoaded) {
             loadScriptsSequentially();
+           redrawCanvas();
+        } else {
+           redrawCanvas();
         }
     }
+
+   function redrawCanvas() {
+       // Call functions responsible for drawing on the canvas
+       // For example, if your introduction.js script has a function named 'initCanvas'
+       if (typeof window.initCanvas === 'function') {
+            window.requestAnimationFrame(render);
+       }
+   }
 
     function loadScript(url) {
         return new Promise((resolve, reject) => {
@@ -43,14 +45,5 @@ export const onRouteUpdate = ({ location }) => {
 
     if (location.pathname.includes('/lightride/')) {
         initializeCanvas();
-    }
-};
-
-export const onRouteUpdateDelayed = ({ location }) => {
-    if (location.pathname.includes('/lightride/')) {
-        // Additional checks or reinitializations if needed
-        if (!scriptLoaded) {
-            initializeCanvas();
-        }
     }
 };
