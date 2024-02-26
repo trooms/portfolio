@@ -1,4 +1,5 @@
 console.clear();
+console.log("Building introduction canvas");
 
 // Get the canvas element from the DOM
 const canvas = document.querySelector('#introduction');
