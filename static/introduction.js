@@ -1,6 +1,7 @@
 if (!window.initCanvas) {
   window.initCanvas = function() {
     console.clear();
+    console.log("Drawing canvas");
 
     // Get the canvas element from the DOM
     const canvas = document.getElementById('introduction');
