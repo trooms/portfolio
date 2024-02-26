@@ -1,6 +1,7 @@
+import React from 'react';
 import './src/css/index.css';
 
-exports.onRouteUpdate = ({ location }) => {
+export const onRouteUpdate = ({ location }) => {
     function loadScript(url) {
       return new Promise((resolve, reject) => {
         var script = document.createElement('script');
@@ -24,5 +25,4 @@ exports.onRouteUpdate = ({ location }) => {
     }
   
     loadScriptsSequentially();
-  };
-  
+};
