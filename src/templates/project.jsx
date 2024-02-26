@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby';
 import moment from 'moment';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import Header from '../components/header';
 import Layout from '../components/layout';
@@ -12,8 +12,27 @@ const classes = {
 };
 
 const Project = ({ data }) => {
-  const post = data.markdownRemark;
+  useEffect(() => {
+    const handleLoad = () => {
+      if (typeof window.initCanvas === 'function') {
+        window.initCanvas();
+      }
+    };
+  
+    window.addEventListener('load', handleLoad);
+  
+    // Call initCanvas directly in case the page is already loaded
+    if (document.readyState === 'complete') {
+      handleLoad();
+    }
+  
+    // Cleanup function to remove the event listener
+    return () => {
+      window.removeEventListener('load', handleLoad);
+    };
+  }, []);
 
+  const post = data.markdownRemark;
   return (
     <Layout>
       <Header metadata={data.site.siteMetadata} />
