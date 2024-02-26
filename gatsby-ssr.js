@@ -1,4 +1,4 @@
-/*import React from "react";
+import React from "react";
 
 export function onRenderBody({ setHeadComponents }) {
     setHeadComponents([
@@ -21,6 +21,7 @@ export function onRenderBody({ setHeadComponents }) {
                         try {
                             await loadScript('/TweenMax.min.js');
                             await loadScript('/introduction.js');
+                            window.initCanvas();
                         } catch (error) {
                             console.error("Script loading failed:", error);
                         }
@@ -32,4 +33,4 @@ export function onRenderBody({ setHeadComponents }) {
             }}
         />
     ]);
-}*/
+}
