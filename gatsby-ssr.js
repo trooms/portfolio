@@ -21,7 +21,6 @@ export function onRenderBody({ setHeadComponents }) {
                         try {
                             await loadScript('/TweenMax.min.js');
                             await loadScript('/introduction.js');
-                            window.initCanvas();
                         } catch (error) {
                             console.error("Script loading failed:", error);
                         }

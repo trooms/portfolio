@@ -7,16 +7,8 @@ export const onRouteUpdate = ({ location }) => {
         if (!scriptLoaded) {
             loadScriptsSequentially();
             redrawCanvas();
-        } else {
-            redrawCanvas();
         }
     }
-
-   function redrawCanvas() {
-       if (typeof window.initCanvas === 'function') {
-            window.initCanvas();
-       }
-   }
 
     function loadScript(url) {
         return new Promise((resolve, reject) => {
