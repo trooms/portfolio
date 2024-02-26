@@ -4,8 +4,9 @@ let scriptLoaded = false;
 
 export const onRouteUpdate = ({ location }) => {
     if (location.pathname.includes('/lightride/')) {
-        if (typeof window.initCanvas === 'function') {
+        setTimeout(() => {
             window.initCanvas();
-       }
+          }, "1000");
+          
     }
 };
