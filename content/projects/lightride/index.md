@@ -16,8 +16,4 @@ You can mess with the sliders at the bottom for volume settings.
 
 <iframe src="https://i.simmer.io/@trooms/lightride" style="width:960px;height:600px"></iframe>
 
-canvas {
-  width:100vw;
-  height:100vh;
-}
-<canvas id="scene"></canvas>
+<canvas id="introduction" width="100vw" height="100vh"></canvas>
