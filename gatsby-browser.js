@@ -45,3 +45,7 @@ export const onRouteUpdate = ({ location }) => {
         initializeCanvas();
     }
 };
+
+window.addEventListener('load', () => {
+    initializeCanvas();
+});
