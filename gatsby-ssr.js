@@ -15,7 +15,7 @@ export function onRenderBody({ setHeadComponents, setPostBodyComponents }) {
 
                 document.addEventListener('DOMContentLoaded', (event) => {
                     if (window.location.href.includes('/lightride/')) {
-                        loadScript('TweenMax.min.js')
+                        loadScript('/TweenMax.min.js')
                         loadScript('/introduction.js');
                     }
                 });
