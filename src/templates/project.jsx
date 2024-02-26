@@ -13,7 +13,12 @@ const classes = {
 
 const Project = ({ data }) => {
   useEffect(() => {
-    window.initCanvas();
+    if (typeof window !== 'undefined') {
+      window.onload = () => window.initCanvas();
+    } else {
+      window.initCanvas();
+    }
+    
   }, []);
 
   const post = data.markdownRemark;
