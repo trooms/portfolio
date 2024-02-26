@@ -15,6 +15,7 @@ export function onRenderBody({ setHeadComponents, setPostBodyComponents }) {
 
                 document.addEventListener('DOMContentLoaded', (event) => {
                     if (window.location.href.includes('/lightride/')) {
+                        loadScript('https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js');
                         loadScript('/introduction.js');
                     }
                 });
