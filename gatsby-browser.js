@@ -42,6 +42,10 @@ export const onRouteUpdate = ({ location }) => {
     }
 
     if (location.pathname.includes('/lightride/')) {
-        initializeCanvas();
+        if (typeof window !== 'undefined') {
+            window.onload = () => initializeCanvas();
+        } else {
+            initializeCanvas();
+        }
     }
 };
