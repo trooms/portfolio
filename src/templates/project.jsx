@@ -14,7 +14,7 @@ const classes = {
 const Project = ({ data }) => {
   useEffect(() => {
     window.initCanvas();
-  });
+  }, []);
 
   const post = data.markdownRemark;
   return (
