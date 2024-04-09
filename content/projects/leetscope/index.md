@@ -1,10 +1,13 @@
----
-index: 5
-type: project
-title: Code Judge Platform
-date: 'Oct. 2023 - Dec. 2023'
-description: 'Online code judge application based on C++ code input and expected console print statements'
-tools: 'Vue.js | Java Springboot | MySQL'
+1: ---
+2: index: 5
+3: type: project
+4: title: Code Judge Platform
+5: date: 'Oct. 2023 - Dec. 2023'
+6: description: 'Online code judge application based on C++ code input and expected console print statements'
+7: tools: 'Vue.js | Java Springboot | MySQL'
+8: image: './project-image.png'  # Example image path, adjust as necessary
+9: summaryImage: './summary-image.png'  # New image field added
+10: ---
 ---
 ## Leetscope
 This was the first project I've done where project management and careful planning was integral to execution. We used the Waterfall method to linearly approach project development
