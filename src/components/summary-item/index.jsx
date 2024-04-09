@@ -1,9 +1,9 @@
 import { Link } from 'gatsby';
 import React from 'react';
-import Img from 'gatsby-image'; // or { GatsbyImage } from 'gatsby-plugin-image' for newer versions
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 const classes = {
-  wrapper: 'mb-6',
+  wrapper: 'mb-6 flex items-center', // Moved display and alignItems here for simplicity
   name: 'font-semibold text-gray-900 pb-1',
   date: 'italic text-gray-600 pb-1',
   description: 'text-md text-gray-600 font-light',
@@ -17,7 +17,7 @@ const SummaryItem = ({
   link = false,
   tools = null,
   internal = false,
-  imageData = null, // New prop for image data
+  imageData = null, // Updated prop for image data
 }) => {
   let linkContent;
   if (internal) {
@@ -26,9 +26,13 @@ const SummaryItem = ({
     linkContent = <a href={link} rel="noreferrer">{name}</a>;
   }
 
+  // Extract the image data using getImage helper
+  const image = getImage(imageData);
+
   return (
-    <div className={classes.wrapper} style={{ display: 'flex', alignItems: 'center' }}> {/* Adjust style for layout */}
-      {imageData && <Img fluid={imageData.childImageSharp.fluid} alt={name} />} {/* Display the image */}
+    <div className={classes.wrapper}>
+      {/* Conditionally render GatsbyImage if image is available */}
+      {image && <GatsbyImage image={image} alt={name} className="mr-4" />} {/* Adjusted to use GatsbyImage */}
       <div>
         <h3 className={`${classes.name} ${link ? 'hover:underline hover:text-black' : ''}`}>
           {link ? linkContent : name}
