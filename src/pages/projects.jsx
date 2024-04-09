@@ -6,7 +6,6 @@ import Header from '../components/header';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
 import NotFound from '../pages/404';
-import Img from 'gatsby-image';
 
 const Index = ({ data }) => {
   const projects = data.allMarkdownRemark.edges.filter(
@@ -57,12 +56,6 @@ export const pageQuery = graphql`
             title
             description
             tools
-            image {
-              childImageSharp {
-                fluid(maxWidth: 200) {
-                  ...GatsbyImageSharpFluid
-                }
-            }
           }
         }
       }
