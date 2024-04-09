@@ -10,6 +10,7 @@ import SectionEducation from '../components/section-education';
 import SectionExperience from '../components/section-experience';
 
 import Seo from '../components/seo';
+import Img from 'gatsby-image';
 
 const Index = ({ data }) => {
   const about = get(data, 'site.siteMetadata.about', false);
