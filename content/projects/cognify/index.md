@@ -5,7 +5,7 @@ title: AI  Powered Education App
 date: 'Feb 2023 - Present'
 description: 'Education app using a stochastic shortest path algorithm for optimizing spaced repetition scheduling'
 tools: 'Expo (React Native) + Tauri'
-imageData: images/profile.png
+image: ../images/profile.jpg
 ---
 ## Cognify
 Cognify is a WIP, intending to be an openly extensible education platform which optimizes learning for the individual using machine learning.

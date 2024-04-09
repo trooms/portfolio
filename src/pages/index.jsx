@@ -76,6 +76,12 @@ export const pageQuery = graphql`
             title
             tools
             description
+            image {
+              childImageSharp {
+                fluid(maxWidth: 200) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
           }
         }
       }
