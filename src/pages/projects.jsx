@@ -56,6 +56,10 @@ export const pageQuery = graphql`
             title
             description
             tools
+            image {
+              childImageSharp {
+                gatsbyImageData(width: 200, layout: FIXED)
+            }
           }
         }
       }

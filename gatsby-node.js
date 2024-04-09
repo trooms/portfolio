@@ -141,6 +141,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       description: String
       date: String
       tools: String
+      image: File @link(by: "relativePath")
     }
     
     type Fields {

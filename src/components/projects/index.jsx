@@ -15,7 +15,7 @@ const Projects = ({ projects }) => {
           tools={post.node.frontmatter.tools}
           link={post.node.fields.slug}
           internal
-          imageData={post.node.frontmatter.image}
+          image={post.node.frontmatter.image}
         />
       ))}
     </Section>

@@ -13,6 +13,7 @@ const BlogPosts = ({ posts }) => {
           description={post.node.frontmatter.description}
           link={post.node.fields.slug}
           internal
+          image={post.node.frontmatter.image}
         />
       ))}
     </Section>
