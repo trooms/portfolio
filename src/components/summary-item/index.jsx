@@ -17,7 +17,7 @@ const SummaryItem = ({
   link = false,
   tools = null,
   internal = false,
-  imageData = null, // Updated prop for image data
+  image = null, // Updated prop for image data
 }) => {
   let linkContent;
   if (internal) {
