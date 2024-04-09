@@ -2,6 +2,14 @@ import { Link } from 'gatsby';
 import React from 'react';
 import Img from 'gatsby-image'; // or { GatsbyImage } from 'gatsby-plugin-image' for newer versions
 
+const classes = {
+  wrapper: 'mb-6',
+  name: 'font-semibold text-gray-900 pb-1',
+  date: 'italic text-gray-600 pb-1',
+  description: 'text-md text-gray-600 font-light',
+  tools: 'italic text-gray-600 pb-1',
+};
+
 const SummaryItem = ({
   date = null,
   name,
