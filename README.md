@@ -1,1 +1,1 @@
-[This site](https://trooms.dev) is a fork of [Devfolio by Ryan Fitzgerald](https://github.com/RyanFitzgerald/devfolio). Devfolio is deprecated, but I am actively working on a pull request to update the original repo.
+[This site](https://trooms.dev) is a fork of [Devfolio by Ryan Fitzgerald](https://github.com/RyanFitzgerald/devfolio).
