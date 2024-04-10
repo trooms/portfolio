@@ -81,9 +81,9 @@ export const pageQuery = graphql`
                     fluid(maxWidth: 600) {
                       ...GatsbyImageSharpFluid
                     }
-                    extension
-                    publicURL
                   }
+                  extension
+                  publicURL
                 }
               }
             }
