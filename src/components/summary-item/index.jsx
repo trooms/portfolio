@@ -41,8 +41,8 @@ const SummaryItem = ({
         {description}
       </p>
     </div>
-    <div style={{ width: '1px', backgroundColor: '#e5e7eb', height: 'auto', alignSelf: 'stretch' }}></div>
-    {image && <div className={classes.imageColumn} style={{ flex: 1, marginLeft: '20px'}}><Img fluid={image.childImageSharp.fluid} alt={name} /></div>}
+    {image && <div style={{ width: '1px', backgroundColor: '#e5e7eb', height: 'auto', alignSelf: 'stretch' }}></div>}
+    {image && <div className={classes.imageColumn} style={{ flex: 1, marginLeft: '40px'}}><Img fluid={image.childImageSharp.fluid} alt={name} /></div>}
   </div>
   );
 };

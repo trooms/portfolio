@@ -5,6 +5,7 @@ title: Tumbleweed
 date: 'Aug. 2022 - Dec. 2022 | Prototype'
 description: 'Movement Based First Person Shooter'
 tools: 'Unity Universal Rendering Pipeline'
+image: ./tumbleweed.gif
 ---
 This project started in a game design project class (no code supervision, just gameplay suggestions / game testing in class time). Most complex game I've worked on so far, despite it being a prototype. Created the entire first-person controller from scratch and implemented physics based shooting with drag. The FPS controller is able to wall jump, slide, and lean.
 
