@@ -11,7 +11,9 @@ module.exports = {
     // Optional: Github account URL
     github: `https://github.com/trooms`,
     // Content of the About Me section
-    about: `I am a third-year bachelors student in Computing Science (Games) and Applied & Computational Mathematics at the University of Southern California.
+    about: `Currently, I am a third-year bachelors student in Computing Science (Games) and Applied & Computational Mathematics at the University of Southern California.
+            \nMy interests lie in engine programming, including but not limited to real-time rendering, animation programming, tooling, networking, and distributed systems.
+            \nI've worked as a Software Engineer at Keysight Technologies and been done a Software Engineering mentorship at Microsoft, but hope to break into the film and game industry.
             \nI'm currently working on a project focused on bringing applications of machine learning to education.
             \nApart from school, I take care of my dog Sloane and work as a server at Study Hall, a local off-campus restaurant.`,
     // Optional: List your education, they must have `name` and `description`. `link` is optional.
