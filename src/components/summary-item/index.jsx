@@ -27,28 +27,22 @@ const SummaryItem = ({
   }
 
   return (
-    <div className={classes.wrapper}>
-      {image && <Img fluid={image.childImageSharp.fluid} alt={name} />}
-      <h3
-        className={`${classes.name} ${
-          link ? 'hover:underline hover:text-black' : ''
-        }`}
-      >
+    <div className={classes.wrapper} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+    <div className={classes.textContent} style={{ flex: 1 }}>
+      <h3 className={`${classes.name} ${link ? 'hover:underline hover:text-black' : ''}`}>
         {link ? linkContent : name}
       </h3>
       {date && <h3 className={classes.date}>{date}</h3>}
       {tools && <h3 className={classes.tools}>{tools}</h3>}
-      <p 
-        className={classes.description}
-        style={{
-            wordWrap: 'break-word', /* IE>=5.5 */
-            whiteSpace: 'pre', /* IE>=6 */
-            whiteSpace: '-moz-pre-wrap', /* For Fx<=2 */
-            whiteSpace: 'pre-wrap' /* Fx>3, Opera>8, Safari>3*/
-        }}>
+      <p className={classes.description} style={{
+          wordWrap: 'break-word',
+          whiteSpace: 'pre-wrap',
+      }}>
         {description}
-    </p>
+      </p>
     </div>
+    {image && <div className={classes.imageColumn} style={{ flex: 1 }}><Img fluid={image.childImageSharp.fluid} alt={name} /></div>}
+  </div>
   );
 };
 
