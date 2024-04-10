@@ -40,8 +40,8 @@ const SummaryItem = ({
       }}>
         {description}
       </p>
-    <div style={{ width: '2px', backgroundColor: '#e5e7eb', margin: '0 20px', height: 'auto', alignSelf: 'stretch' }}></div>
     </div>
+    <div style={{ width: '2px', backgroundColor: '#e5e7eb', height: 'auto', alignSelf: 'stretch' }}></div>
     {image && <div className={classes.imageColumn} style={{ flex: 1 }}><Img fluid={image.childImageSharp.fluid} alt={name} /></div>}
   </div>
   );
