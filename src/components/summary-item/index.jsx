@@ -28,7 +28,7 @@ const SummaryItem = ({
 
   return (
     <div className={classes.wrapper} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-    <div className={classes.textContent} style={{ flex: 1 }}>
+    <div className={classes.textContent} style={{ flex: 1, marginRight: '20px'}}>
       <h3 className={`${classes.name} ${link ? 'hover:underline hover:text-black' : ''}`}>
         {link ? linkContent : name}
       </h3>
@@ -42,7 +42,7 @@ const SummaryItem = ({
       </p>
     </div>
     <div style={{ width: '1px', backgroundColor: '#e5e7eb', height: 'auto', alignSelf: 'stretch' }}></div>
-    {image && <div className={classes.imageColumn} style={{ flex: 1, marginLeft: '20px'  }}><Img fluid={image.childImageSharp.fluid} alt={name} /></div>}
+    {image && <div className={classes.imageColumn} style={{ flex: 1, marginLeft: '20px'}}><Img fluid={image.childImageSharp.fluid} alt={name} /></div>}
   </div>
   );
 };
