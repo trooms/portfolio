@@ -16,6 +16,7 @@ const SectionProjects = ({ projects }) => {
           description={project.node.frontmatter.description}
           tools={project.node.frontmatter.tools}
           link={project.node.fields.slug}
+          image={project.node.frontmatter.image}
           internal
         />
       ))}
