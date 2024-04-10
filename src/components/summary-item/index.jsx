@@ -42,8 +42,16 @@ const SummaryItem = ({
       </p>
     </div>
     {image && <div style={{ width: '1px', backgroundColor: '#e5e7eb', height: 'auto', alignSelf: 'stretch' }}></div>}
-    {(image && image.childImageSharp) && <div className={classes.imageColumn} style={{ flex: 1, marginLeft: '40px'}}><Img fluid={image.childImageSharp.fluid} alt={name} /></div>}
-    { !image.childImageSharp && image.extension === 'gif' && <div className={classes.imageColumn} style={{ flex: 1, marginLeft: '40px'}}><img src={image.publicURL} alt={name} /></div>}
+    {image && image.childImageSharp && (
+      <div className={classes.imageColumn} style={{ flex: 1, marginLeft: '40px' }}>
+        <Img fluid={image.childImageSharp.fluid} alt={name} />
+      </div>
+    )}
+    {image && !image.childImageSharp && image.extension === 'gif' && (
+      <div className={classes.imageColumn} style={{ flex: 1, marginLeft: '40px' }}>
+        <img src={image.publicURL} alt={name} />
+      </div>
+    )}
   </div>
   );
 };
