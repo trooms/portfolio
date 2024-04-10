@@ -5,6 +5,7 @@ title: LightRide
 date: 'May. 2022 - Jun. 2022 | Prototype'
 description: '2D Physics Puzzle Game'
 tools: 'Unity3D'
+image: ./lightride.gif
 ---
 Fun prototype mixing a lot of elements of basic 2D games, including consistent physics, hidden objects, and platformer-esque gameplay (I know its not a platformer.. but the lights are kinda like platforms!).
 
