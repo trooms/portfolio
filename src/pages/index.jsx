@@ -38,47 +38,54 @@ const Index = ({ data }) => {
 export default Index;
 
 export const pageQuery = graphql`
-  query pageUserstalhaDesktopGitHubtalhayranciComsrcpagesindexJsx1345041852 {
-    site {
-      siteMetadata {
-        name
-        title
-        description
-        about
-        author
-        github
-        linkedin
-        experience {
-          date
-          name
-          description
-          tools
-          link
-        }
-        education {
-          date
-          name
-          description
-        }
-      }
-    }
-    allMarkdownRemark(sort: { frontmatter: { index: DESC } }) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            index
-            type
-            date
+      query {
+        site {
+          siteMetadata {
+            name
             title
-            tools
             description
+            about
+            author
+            github
+            linkedin
+            experience {
+              date
+              name
+              description
+              tools
+              link
+            }
+            education {
+              date
+              name
+              description
+            }
+          }
+        }
+        allMarkdownRemark(sort: { frontmatter: { index: DESC } }) {
+          edges {
+            node {
+              excerpt
+              fields {
+                slug
+              }
+              frontmatter {
+                index
+                type
+                date
+                title
+                tools
+                description
+                image {
+                  childImageSharp {
+                    fluid(maxWidth: 600) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
-    }
-  }
-`;
+    `;

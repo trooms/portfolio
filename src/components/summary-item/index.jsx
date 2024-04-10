@@ -1,5 +1,6 @@
 import { Link } from 'gatsby';
 import React from 'react';
+import Img from 'gatsby-image';
 
 const classes = {
   wrapper: 'mb-6',
@@ -16,6 +17,7 @@ const SummaryItem = ({
   link = false,
   tools = null,
   internal = false,
+  image = null
 }) => {
   let linkContent;
   if (internal) {
@@ -26,6 +28,7 @@ const SummaryItem = ({
 
   return (
     <div className={classes.wrapper}>
+      {image && <Img fluid={image.childImageSharp.fluid} alt={name} />}
       <h3
         className={`${classes.name} ${
           link ? 'hover:underline hover:text-black' : ''
