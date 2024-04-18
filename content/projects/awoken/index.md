@@ -14,5 +14,6 @@ Right now it is a WIP, below is realtime gameplay I of the game recorded directl
 
 ## Platformer
 <img src="./parallaxbp.png" style="width:1440px;display:block;"/>
+<img src="./parallaxbp-2.png" style="width:1440px;display:block;"/>
 <img src="./updateparallaxbp.png" width="240px"/>
 <img src="./platformer.gif" width="720px"/>
