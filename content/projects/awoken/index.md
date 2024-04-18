@@ -13,6 +13,8 @@ Awoken is meant to be encompass a dynamic visual evolution that mirrors the prot
 Right now it is a WIP, below is realtime gameplay I of the game recorded directly from the engine editor and snippets of blueprints I wrote for each respective scene.
 
 ## Platformer
-<img src="./parallaxbp.png" style="width:1080px;"/>
+<div class="longImage" style="float:right;width:1080px;padding:10px 0 10px 10px;">
+    <img src="parallaxbp.png"/>
+</div>
 <img src="./updateparallaxbp.png" width="240px"/>
 <img src="./platformer.gif" width="720px"/>
