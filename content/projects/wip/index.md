@@ -4,7 +4,7 @@ type: project
 title: WIP
 date: 'Feb 2023 - Present'
 description: 'Various projects I'm actively working on completing in my free time when I get back from work/school'
-tools: "Unreal Engine, Expo (React Native) + Tauri, Maya"
+tools: "Unreal Engine | Expo (React Native) + Tauri | Maya"
 image: ./platformer.gif
 ---
 ## Cognify
