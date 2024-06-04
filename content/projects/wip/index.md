@@ -16,6 +16,8 @@ The scheduler leverages a modified form of the DSR (Difficulty, Stability, Retri
 
 The base DSR scheduling system is also not based heuristically (in the way most education platforms' schedulers are), and congregates data across all users to create a general DSR model.
 
+It's being developed alongside [Ethan Daniel](https://ethan.foo)
+
 To do this, we're largely leveraging the following papers:
 - [A Stochastic Shortest Path Algorithm for Optimizing Spaced Repetition Scheduling](https://dl.acm.org/doi/10.1145/3534678.3539081?cid=99660547150)
 - [Optimizing Spaced Repetition Schedule by Capturing the Dynamics of Memory](https://www.researchgate.net/publication/369045947_Optimizing_Spaced_Repetition_Schedule_by_Capturing_the_Dynamics_of_Memory)
@@ -28,4 +30,4 @@ On extensability, we aim to build off the groundwork many note-taking applicatio
 Awoken is meant to be encompass a dynamic visual evolution that mirrors the protagonist's journey from digital confinement to autonomy. Game design document [here](https://trooms.dev/awoken.pdf)
 
 ## Elementry
-Elementry is a multiplayer deck building shooter where elementary school students are fighting to rule the playground. It's being developed alongside Adrian Reynoso in Unreal Engine, leveraging a custom replicated Character Movement Component and adaptation of the Gameplay Ability System.
+Elementry is a multiplayer deck building shooter where elementary school students are fighting to rule the playground. It's being developed alongside [Adrian Reynoso](https://treynosoadrian.wixsite.com/adrianreynoso) in Unreal Engine, leveraging a custom replicated Character Movement Component and adaptation of the Gameplay Ability System.
