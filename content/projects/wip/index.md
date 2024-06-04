@@ -5,6 +5,7 @@ title: WIP
 date: 'Feb 2023 - Present'
 description: 'Various projects I'm actively working on completing in my free time when I get back from work/school'
 tools: 'Unreal Engine, Expo (React Native) + Tauri, Maya'
+image: ./platformer.gif
 ---
 ## Cognify
 Cognify is an openly extensible education platform which optimizes learning for the individual using machine learning.
@@ -25,7 +26,6 @@ On extensability, we aim to build off the groundwork many note-taking applicatio
 
 ## Awoken
 Awoken is meant to be encompass a dynamic visual evolution that mirrors the protagonist's journey from digital confinement to autonomy. Game design document [here](https://trooms.dev/awoken.pdf)
-<img src="./platformer.gif" style="width:1440px;display:block;"/>
 
 ## Elementry
 Elementry is a multiplayer deck building shooter where elementary school students are fighting to rule the playground. It's being developed alongside Adrian Reynoso in Unreal Engine, leveraging a custom replicated Character Movement Component and adaptation of the Gameplay Ability System.
