@@ -4,7 +4,7 @@ type: project
 title: 'Allison B. Margolin, PLC'
 date: 'Present'
 description: "Digital Forensics, Legal Writing, Web Development"
-tools: 'React (Astro) | Magnet Verakey |  '
+tools: 'React (Astro) | OSINT Forenics'
 image: ./margolin.gif
 ---
 Author of bail motion that has freed client in felony case post-conviction after no-bail order.
