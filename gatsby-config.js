@@ -11,11 +11,11 @@ module.exports = {
     // Optional: Github account URL
     github: `https://github.com/trooms`,
     // Content of the About Me section
-    about: `Currently, I am a third-year bachelors student in Computing Science (Games) and Applied & Computational Mathematics at the University of Southern California.
-            \nMy interests lie in engine programming, including but not limited to real-time rendering, animation programming, tooling, and networking.
+    about: `I am in my last year as a bachelors student in Computing Science (Games) and Applied & Computational Mathematics at the University of Southern California.
+            \nMy interests lie in engine programming, including but not limited to VFX, real-time rendering, animation programming, and tooling for all of the above.
             \nI've worked as a Software Engineer at Keysight Technologies and been done a Software Engineering mentorship at Microsoft, but hope to break into the film and game industry.
-            \nI'm currently working on a project focused on bringing applications of machine learning to education.
-            \nApart from school, I take care of my dog Sloane and work as a server at Study Hall, a local off-campus restaurant.`,
+            \nI'm at Allison B. Margolin, PLC, a criminal defense firm, where I've started developing internal legal software for consent based digital forensics and  general quality of life improvements.
+            \nApart from work and school, I'm working on two games of my own and am a part of a stealth startup.`,
     // Optional: List your education, they must have `name` and `description`. `link` is optional.
     /*projects: [
       {
@@ -39,6 +39,13 @@ module.exports = {
     ],*/
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
+      {
+        date: 'Los Angeles, CA | July 2024 - Present',
+        name: 'Allison B. Margolin, PLC',
+        description: 'Personal Assistant',
+        tools: 'Legal Writing',
+        link: 'https://www.allisonmargolin.com'
+      },
       {
         date: 'Remote | May 2021 - Jul. 2021',
         name: 'IoT ONE',
