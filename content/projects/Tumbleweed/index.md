@@ -7,7 +7,7 @@ description: 'Movement Based First Person Shooter'
 tools: 'Unity Universal Rendering Pipeline'
 image: ./tumbleweed.gif
 ---
-This project started in a game design project class (no code supervision, just gameplay suggestions / game testing in class time). Most complex game I've worked on so far, despite it being a prototype. Created the entire first-person controller from scratch and implemented physics based shooting with drag. The FPS controller is able to wall jump, slide, and lean.
+This project started in a game design project class (no code supervision, just gameplay suggestions / game testing in class time). Most complex game I'd worked on at that point, despite it being a prototype. Created the entire first-person controller from scratch and implemented physics based shooting with drag. The FPS controller is able to wall jump, slide, and lean.
 
 The scope of the game is a bit out of reach for me to do alone. I intended the R (or North on controller) button to not be a reload, and the game to not be a traditional FPS (although you will find out that it is already a bit nontraditional, even understanding the controls). Instead, players would have a deck of cards where each card is a special weapon, and pressing R (or running out of ammo) would switch to that weapon.
 
